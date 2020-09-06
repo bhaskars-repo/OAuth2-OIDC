@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Understanding OAuth2</title>
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="../static/images/favicon.ico">
+        <style>
+            td {
+              white-space: normal !important;
+              word-wrap: break-word;
+            }
+            table {
+              table-layout: fixed;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <div class="container">
+            <br/>
+            <div class="display-4 text-center text-secondary">Understanding OAuth2</div>
+            <br/>
+            <hr/>
+            <nav class="nav nav-tabs nav-justified">
+                <a id="code" class="nav-item nav-link" href="http://localhost:5000/auth_code">Authorization Code</a>
+                <a id="token" class="nav-item nav-link" href="http://localhost:5000/access_token">Access Token</a>
+                <a id="profile" class="nav-item nav-link" href="http://localhost:5000/user_profile">User Profile</a>
+                <a id="logout" class="nav-item nav-link" href="http://localhost:5000/logout">Logout</a>
+            </nav>
+            <br/>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr class="bg-secondary text-light">
+                        <th width="20%">Key</th>
+                        <th width="80%">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>State</td>
+                        <td>{{ data['state'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Authorization Code</td>
+                        <td id="a_code">{{ data['code'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Session</td>
+                        <td>{{ data['session'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Access Token</td>
+                        <td>{{ data['a_token'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Refresh Token</td>
+                        <td>{{ data['r_token'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Token Type</td>
+                        <td>{{ data['t_type'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Scope</td>
+                        <td>{{ data['scope'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>User Email</td>
+                        <td>{{ data['email'] }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="../static/js/jquery.slim.min.js"></script>
+        <script src="../static/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
