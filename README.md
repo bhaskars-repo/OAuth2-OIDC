@@ -1,5 +1,7 @@
 ### Understanding OAuth2 and OpenID Connect (OIDC)
 
+Updated: 04/26/2025
+
 Sample code that demonstrates the working of the different OAuth2 flows.
 
 The instructions below assume that we are in a directory called `OAuth2`.
@@ -17,7 +19,7 @@ docker-compose --env-file ./docker/vars.env -f ./docker/postgres-keycloak.yml up
 - To stop, open a terminal and execute the following:
 
 ```
-docker-compose --env-file ./OAuth2/docker/vars.env -f ./OAuth2/docker/postgres-keycloak.yml down
+docker-compose --env-file ./docker/vars.env -f ./OAuth2/docker/postgres-keycloak.yml down
 ```
 
 ### Testing the OAuth2 flows
