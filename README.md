@@ -17,7 +17,7 @@ docker-compose --env-file ./docker/vars.env -f ./docker/postgres-keycloak.yml up
 - To stop, open a terminal and execute the following:
 
 ```
-docker-compose --env-file ./OAuth2/docker/vars.env -f ./OAuth2/docker/postgres-keycloak.yml down
+docker-compose --env-file ./docker/vars.env -f ./docker/postgres-keycloak.yml down
 ```
 
 ### Testing the OAuth2 flows
